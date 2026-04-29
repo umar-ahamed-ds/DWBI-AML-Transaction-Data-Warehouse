@@ -1,0 +1,96 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>CubeProject_IT23692978</Database>
+    <Server>localhost\SSAD</Server>
+    <ConnectionString>Data Source=localhost\SSAD;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>JDMvhWYeCEK4AXWLgjwlzbW0wg8=30/03/2026 22:00:4629/03/2026 23:09:01</TimeStamp>
+        <ID>
+          <String>DS_AML_DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>k4wvidohyVRL/a38/J1NQX9/HKo=29/03/2026 23:10:3429/03/2026 23:10:34</TimeStamp>
+        <ID>
+          <String>AML DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>vpIZsjaiyTyiM5qWcpFGO7TIc/k=30/03/2026 00:50:3329/03/2026 23:30:09</TimeStamp>
+        <ID>
+          <String>Dim Currency</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>G0Gr4SaNgO7KZSl6EJDtZIwo91I=30/03/2026 00:50:3329/03/2026 23:30:09</TimeStamp>
+        <ID>
+          <String>Dim Location</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Cbn2qqJgW1u5IuAKiposQ3RUk3c=30/03/2026 00:50:3329/03/2026 23:30:09</TimeStamp>
+        <ID>
+          <String>Dim Account</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>68QCVzibyxiXkBbvhczBIuCXzcQ=30/03/2026 00:50:3329/03/2026 23:30:09</TimeStamp>
+        <ID>
+          <String>Dim Payment Type</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>cYCvtjCE5W7oEM9GWDEdLkVjlDg=30/03/2026 00:56:5329/03/2026 23:30:09</TimeStamp>
+        <ID>
+          <String>Dim Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>PPsCH/tkrCb0Y6agEHPaygG/enQ=30/03/2026 00:50:3329/03/2026 23:30:09</TimeStamp>
+        <ID>
+          <String>Fact Transactions</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>PhzICAABcTUiUr4ZUu9baxISvrI=30/03/2026 22:07:1029/03/2026 23:30:09wCnoSPC2XiWU0EJz9kLULVKrPyY=29/03/2026 23:30:0929/03/2026 23:30:09</TimeStamp>
+        <ID>
+          <String>AML DW</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>bHtnx6R39Ka/KKblFPlWudgDTnE=29/03/2026 23:02:1129/03/2026 23:02:11</TimeStamp>
+      <ID>
+        <String>CubeProject_IT23692978</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2026-03-30T17:40:01.62Z</LastDeployed>
+</DeploymentSnapshot>

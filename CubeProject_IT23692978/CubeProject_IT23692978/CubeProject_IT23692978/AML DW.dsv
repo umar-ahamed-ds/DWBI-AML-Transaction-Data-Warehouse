@@ -1,0 +1,222 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2dc86780-8811-4de8-8182-14f3676ab471" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>AML DW</ID>
+  <Name>AML DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>DS_AML_DW</DataSourceID>
+  <Schema>
+    <xs:schema id="AML_x0020_DW" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="AML_x0020_DW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="e49daa24-8cb2-4aa4-a571-82980810de36">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Dim_Account" msprop:DbTableName="Dim_Account" msprop:FriendlyName="Dim_Account" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="f414a7b6-22be-4715-a5c0-24618906e44c">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="AccountKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="AccountKey" msprop:DbColumnName="AccountKey" msprop:design-time-name="3d4071f6-c973-4be4-95c2-4b58783a087c" type="xs:int" />
+                  <xs:element name="Account_ID" msprop:FriendlyName="Account_ID" msprop:DbColumnName="Account_ID" msprop:design-time-name="d6779d9d-d4a0-4f8e-a1e6-de7a935ad3aa" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Currency" msprop:DbTableName="Dim_Currency" msprop:FriendlyName="Dim_Currency" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="1d060d53-74d2-4021-a27c-9032081dafe0">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="CurrencyKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="CurrencyKey" msprop:DbColumnName="CurrencyKey" msprop:design-time-name="fbff3bda-aeb8-4da9-ba62-254aa66dac25" type="xs:int" />
+                  <xs:element name="CurrencyName" msprop:FriendlyName="CurrencyName" msprop:DbColumnName="CurrencyName" msprop:design-time-name="331473e9-c557-4abc-a735-2ea4c21665e6" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Date" msprop:DbTableName="Dim_Date" msprop:FriendlyName="Dim_Date" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="2f40cf12-7593-4505-8caa-e6bd5edb4e15">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DateKey" msprop:FriendlyName="DateKey" msprop:DbColumnName="DateKey" msprop:design-time-name="c862a415-942c-4d81-aa16-25faf66c352d" type="xs:int" />
+                  <xs:element name="Date" msprop:FriendlyName="Date" msprop:DbColumnName="Date" msprop:design-time-name="e6ec19f0-7b53-46b8-bd66-7276b87be73b" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Day" msprop:FriendlyName="Day" msprop:DbColumnName="Day" msprop:design-time-name="a643eb10-f523-40fd-9eef-b2ef4cf54e1c" type="xs:int" minOccurs="0" />
+                  <xs:element name="Month" msprop:FriendlyName="Month" msprop:DbColumnName="Month" msprop:design-time-name="f8e4d927-6aed-4962-bf29-a177da73a312" type="xs:int" minOccurs="0" />
+                  <xs:element name="Quarter" msprop:FriendlyName="Quarter" msprop:DbColumnName="Quarter" msprop:design-time-name="b85abdc8-e578-4ba3-8324-6da8c4627ea1" type="xs:int" minOccurs="0" />
+                  <xs:element name="Year" msprop:FriendlyName="Year" msprop:DbColumnName="Year" msprop:design-time-name="53b4497c-7395-4dd5-ba38-d537bc396456" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Location" msprop:DbTableName="Dim_Location" msprop:FriendlyName="Dim_Location" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="4c739fdc-5716-461f-b440-5f94c828dad5">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="LocationKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="LocationKey" msprop:DbColumnName="LocationKey" msprop:design-time-name="893eb096-36b0-4867-bff5-c464c6075af4" type="xs:int" />
+                  <xs:element name="Country" msprop:FriendlyName="Country" msprop:DbColumnName="Country" msprop:design-time-name="53ea91b3-4894-43ed-b650-bc5aa210109c" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="StartDate" msprop:FriendlyName="StartDate" msprop:DbColumnName="StartDate" msprop:design-time-name="0b06c042-01b4-4c20-8e93-2c9df0a8afaa" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EndDate" msprop:FriendlyName="EndDate" msprop:DbColumnName="EndDate" msprop:design-time-name="e1b29fa9-5325-4431-8325-51f662b89a00" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="IsCurrent" msprop:FriendlyName="IsCurrent" msprop:DbColumnName="IsCurrent" msprop:design-time-name="04840f6c-5d7b-4603-8449-51a056e3f19d" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="LocationName" msprop:FriendlyName="LocationName" msprop:DbColumnName="LocationName" msprop:design-time-name="9a696d2c-0285-454e-bb71-bc9102f79f47" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_PaymentType" msprop:DbTableName="Dim_PaymentType" msprop:FriendlyName="Dim_PaymentType" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="8766a309-84a9-4808-a7bf-fbf40bd1fde2">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="PaymentTypeKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="PaymentTypeKey" msprop:DbColumnName="PaymentTypeKey" msprop:design-time-name="bb9edf8b-85d7-4ee0-895e-b3618cd35e1b" type="xs:int" />
+                  <xs:element name="Payment_Type" msprop:FriendlyName="Payment_Type" msprop:DbColumnName="Payment_Type" msprop:design-time-name="2eed3d7c-cca7-4a13-b9fb-916d6f973557" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Fact_Transactions" msprop:DbTableName="Fact_Transactions" msprop:FriendlyName="Fact_Transactions" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="f4b0ae2b-c7b5-46fd-a5d7-ae623d55d3c4">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TransactionID" msprop:FriendlyName="TransactionID" msprop:DbColumnName="TransactionID" msprop:design-time-name="c61bc576-76eb-4e91-8f1c-d9c1b0177a89" type="xs:int" />
+                  <xs:element name="DateKey" msprop:FriendlyName="DateKey" msprop:DbColumnName="DateKey" msprop:design-time-name="80e4bb9b-6a9d-4cdf-92e9-28af2b993f4c" type="xs:int" minOccurs="0" />
+                  <xs:element name="SenderAccountKey" msprop:FriendlyName="SenderAccountKey" msprop:DbColumnName="SenderAccountKey" msprop:design-time-name="46407a46-a2ee-4051-878c-2ebae361c9d3" type="xs:int" minOccurs="0" />
+                  <xs:element name="ReceiverAccountKey" msprop:FriendlyName="ReceiverAccountKey" msprop:DbColumnName="ReceiverAccountKey" msprop:design-time-name="4881d2ec-cc62-4696-96c2-f9ba22c02ba7" type="xs:int" minOccurs="0" />
+                  <xs:element name="PaymentTypeKey" msprop:FriendlyName="PaymentTypeKey" msprop:DbColumnName="PaymentTypeKey" msprop:design-time-name="1ed306d7-b152-4640-bb27-8bfd5ff44693" type="xs:int" minOccurs="0" />
+                  <xs:element name="CurrencyKey" msprop:FriendlyName="CurrencyKey" msprop:DbColumnName="CurrencyKey" msprop:design-time-name="c0b03f56-7997-4a31-8b42-4bd83c29c1e5" type="xs:int" minOccurs="0" />
+                  <xs:element name="SenderLocationKey" msprop:FriendlyName="SenderLocationKey" msprop:DbColumnName="SenderLocationKey" msprop:design-time-name="851a4e07-709f-4751-ba23-9cebd8b4264e" type="xs:int" minOccurs="0" />
+                  <xs:element name="ReceiverLocationKey" msprop:FriendlyName="ReceiverLocationKey" msprop:DbColumnName="ReceiverLocationKey" msprop:design-time-name="be052e1f-2f89-4a09-a028-c882fbec577a" type="xs:int" minOccurs="0" />
+                  <xs:element name="Amount" msprop:FriendlyName="Amount" msprop:DbColumnName="Amount" msprop:design-time-name="47164dd3-61f4-4d9c-a349-13980cca190f" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="Is_laundering" msprop:FriendlyName="Is_laundering" msprop:DbColumnName="Is_laundering" msprop:design-time-name="3af21454-5a62-4a8c-9c40-4a5624a383bb" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="Is_suspicious" msprop:FriendlyName="Is_suspicious" msprop:DbColumnName="Is_suspicious" msprop:design-time-name="6b2107a0-eba1-4ed5-b862-1877722bc98c" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="accm_txn_create_time" msprop:FriendlyName="accm_txn_create_time" msprop:DbColumnName="accm_txn_create_time" msprop:design-time-name="0704de82-8113-4afc-9930-ac0284ade02c" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="accm_txn_complete_time" msprop:FriendlyName="accm_txn_complete_time" msprop:DbColumnName="accm_txn_complete_time" msprop:design-time-name="9199e66c-346b-4b0a-80cd-66ed5c217b04" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="txn_process_time_hours" msprop:FriendlyName="txn_process_time_hours" msprop:DbColumnName="txn_process_time_hours" msprop:design-time-name="b147e522-17ed-44dd-9f93-9914b8c2681a" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Account" />
+          <xs:field xpath="AccountKey" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Currency_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Currency" />
+          <xs:field xpath="CurrencyKey" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Date_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Date" />
+          <xs:field xpath="DateKey" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Location_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Location" />
+          <xs:field xpath="LocationKey" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_PaymentType_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_PaymentType" />
+          <xs:field xpath="PaymentTypeKey" />
+        </xs:unique>
+        <xs:unique name="dbo_Fact_Transactions_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Fact_Transactions" />
+          <xs:field xpath="TransactionID" />
+        </xs:unique>
+        <xs:keyref name="FK__Fact_Tran__Recei__5FB337D6" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Transactions" />
+          <xs:field xpath="ReceiverAccountKey" />
+        </xs:keyref>
+        <xs:keyref name="FK__Fact_Tran__Sende__628FA481" refer="dbo_Dim_Location_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Transactions" />
+          <xs:field xpath="SenderLocationKey" />
+        </xs:keyref>
+        <xs:keyref name="FK__Fact_Tran__DateK__5DCAEF64" refer="dbo_Dim_Date_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Transactions" />
+          <xs:field xpath="DateKey" />
+        </xs:keyref>
+        <xs:keyref name="FK__Fact_Tran__Payme__60A75C0F" refer="dbo_Dim_PaymentType_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Transactions" />
+          <xs:field xpath="PaymentTypeKey" />
+        </xs:keyref>
+        <xs:keyref name="FK__Fact_Tran__Sende__5EBF139D" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Transactions" />
+          <xs:field xpath="SenderAccountKey" />
+        </xs:keyref>
+        <xs:keyref name="FK__Fact_Tran__Recei__6383C8BA" refer="dbo_Dim_Location_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Transactions" />
+          <xs:field xpath="ReceiverLocationKey" />
+        </xs:keyref>
+        <xs:keyref name="FK__Fact_Tran__Curre__619B8048" refer="dbo_Dim_Currency_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Transactions" />
+          <xs:field xpath="CurrencyKey" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <AML_x0020_DW xmlns="" />
+  </Schema>
+</DataSourceView>
